@@ -13,6 +13,7 @@ class Logger:
     """
     @desc: class logger
     @feature1: 实现debug/info/warning/fatal日志的分开打印
+    @feature2: 实现handler多样性
     """
     _logger = None
 
