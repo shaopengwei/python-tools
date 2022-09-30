@@ -5,7 +5,6 @@
 @File    : logger.py
 """
 
-import sys
 import logging
 import logging.handlers
 
