@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
-'''
+"""
 @File    :   extract_audio.py
 @Time    :   2024/05/15 21:14:55
 @Author  :   python
@@ -8,7 +8,7 @@
 @Contact :   shaopengwei@hotmail.com
 @License :   (C)Copyright 2024
 @Desc    :   None
-'''
+"""
 
 # lib import
 from moviepy.editor import VideoFileClip

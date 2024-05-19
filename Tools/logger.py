@@ -38,19 +38,19 @@ class Logger:
         self._logger.setLevel(level)
 
 
-    def _gen_handler(self, level, log_dir, formatter, when, interval, backupCount):
+    def _gen_handler(self, level, log_dir, formatter, when, interval, backup_count):
         """
         :param level:
         :param log_dir:
         :param when:
         :param interval:
-        :param backupCount:
+        :param backup_count:
         :return: handler
         """
-        filter = logging.Filter()
-        filter.filter = lambda record: record.levelno == level
+        log_filter = logging.Filter()
+        log_filter.filter = lambda record: record.levelno == level
         handler = logging.handlers.TimedRotatingFileHandler(filename = log_dir, when = when,
-                                        interval = interval, backupCount = backupCount, encoding = 'utf-8')
+                                        interval = interval, backupCount = backup_count, encoding = 'utf-8')
         handler.addFilter(filter)
         handler.setLevel(level)
         handler.setFormatter(formatter)
