@@ -1,0 +1,10 @@
+#EXTM3U
+#EXT-X-VERSION:3 // m3u版本，不同的功能标签要求不同更高的版本
+#EXT-X-TARGETDURATION:10 // 代表最大的segment时长
+
+#EXT-X-KEY:METHOD=AES-128,URI="https://priv.example.com/key.php?r=52" // 媒体文件加密解密，METHOD是加密方法，URI是解密key地址
+
+#EXTINF:时长,标题
+文件绝对路径、文件相对路径、资源url
+
+#EXT-X-STREAM-INF:<attribute-list> // 流媒体的分片地址，BANDWIDTH：媒体最高码率；AVERAGE-BANDWIDTH：平均码率；。。。
